@@ -12,17 +12,17 @@
 * Click the green 'Code' button
 * Click 'Download ZIP'
 * Copy 'export_retime_data.jsx' to your After Effects installs '/Support Files/Scripts/ScriptUI Panels' folder
-* Copy 'afx_retime' to houdinixx.x/otls (Houdini user preferences folder)
+* Copy 'afx_retime.hda' to houdinixx.x/otls (Houdini user preferences folder). The asset is called 'AFX Retime', accessable in the Sop context
 * Data is also supported in the Cinema 4D [Alembic Retime](https://github.com/axisfx2/abc_retime) plugin
 
 ## Troubleshooting
 
-* Make sure your frame rates are consistant across each application
+* Make sure your frame rates are consistent across each application
 
 ## Adding support for other DCCs
 
 The data saved from After Effects is just a plain text list of frame numbers ie [0, 1, 2.5, 3].<br>
-You could easily add support for other DCC's. Simplest method would be to use Json, then convert the string data into a list object:<br>
+You could easily add support for other DCC's. The simplest method would be to use JSON, then convert the string data into a list object:<br>
 Python: json.loads(data)<br>
 Extend Script/ Java: json.parse(data);
 
