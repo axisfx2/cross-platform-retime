@@ -21,10 +21,10 @@
 
 ## Adding support for other DCCs
 
-The data saved from After Effects is just a plain text list of frame numbers ie [0, 1, 2.5, 3].
-You could easily add support for other DCC's. Simplest method would be to use Json, then convert the string data into a list object:
-Python: json.loads(data)
-Extend Script/ Java: json.stringify(data);
+The data saved from After Effects is just a plain text list of frame numbers ie [0, 1, 2.5, 3].<br>
+You could easily add support for other DCC's. Simplest method would be to use Json, then convert the string data into a list object:<br>
+Python: json.loads(data)<br>
+Extend Script/ Java: json.parse(data);
 
 ## Changes
 
